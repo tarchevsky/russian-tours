@@ -1,0 +1,268 @@
+body {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	background-color: #333;
+	color: #fff;
+	letter-spacing: 4px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 300;
+	letter-spacing: normal;
+	font-size: clamp(1.5rem, 1.6vw + 0.8rem, 2rem);
+}
+
+p {
+	font-size: clamp(0.8rem, 0.6vw + 0.5rem, 1rem);
+	line-height: 30px;
+}
+
+button {
+	transition: all 0.3s ease-in-out;
+}
+
+button,
+input::placeholder {
+	letter-spacing: 4px;
+	font-weight: 300;
+}
+
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+.row {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-template-rows: 100px;
+	align-items: center;
+}
+
+.header {
+	position: relative;
+	z-index: 5;
+	padding: 1em 0;
+}
+
+.header nav {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.header ul {
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	gap: 20px;
+	padding: 0;
+}
+
+.header li {
+	list-style: none;
+	white-space: nowrap;
+}
+
+.header li a {
+	position: relative;
+	z-index: 10;
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 15px;
+}
+
+.header li a:hover {
+	border-color: #fff;
+}
+
+.header li a:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: #000;
+	transition: width 0.4s ease-in-out;
+	mix-blend-mode: difference;
+}
+
+.header li a:hover:before {
+	width: 100%;
+}
+
+.logo {
+	position: relative;
+	padding-left: 20px;
+	color: #fff;
+	font-size: 2rem;
+	letter-spacing: normal;
+}
+
+.logo:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 5px;
+	height: 100%;
+	background-color: #fff;
+}
+
+.logo__bold {
+	font-size: 2.5rem;
+	font-weight: 900;
+}
+
+.main {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	min-height: 800px;
+	background: url('./img/mountains.jpg') center center/cover no-repeat;
+}
+
+.main:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #33333377;
+}
+
+.about {
+	width: 100%;
+}
+
+.about-content {
+	position: relative;
+}
+
+.about-bg {
+	background-color: #33333349;
+	max-width: 600px;
+	margin: 0 auto;
+	mix-blend-mode: difference;
+	padding: 50px;
+	border: 20px solid #ffffff;
+}
+
+.about-title {
+	position: relative;
+	font-weight: 900;
+	font-size: clamp(1.6rem, 5.2vw - 0.9rem, 3rem);
+	padding-bottom: 10px;
+}
+
+.about-title:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: block;
+	width: 30%;
+	height: 5px;
+	background-color: #fff;
+}
+
+.about-feedback {
+	position: relative;
+	padding: 10px 15px;
+	border: 2px solid #fff;
+	font-size: 1rem;
+	background-color: transparent;
+	color: #fff;
+}
+
+.about-feedback:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	background-color: #333;
+	mix-blend-mode: color;
+	transition: width 0.4s ease-in-out;
+}
+
+.about-feedback:hover:before {
+	width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+	.container {
+		padding: 0 20px;
+	}
+
+	.about-bg {
+		padding: 30px;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.main {
+		min-height: revert;
+	}
+
+	.header ul {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	button {
+		width: 100%;
+	}
+
+	.row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.header h1 {
+		align-self: flex-start;
+	}
+
+	.logo {
+		align-self: flex-start;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	#button {
+		font-size: 0.8rem;
+	}
+
+	.main {
+		height: revert;
+		padding: 27% 0 20px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.main {
+		padding-top: 32%;
+	}
+}
+
+@media screen and (max-width: 325px) {
+	.main {
+		padding-top: 48%;
+	}
+}

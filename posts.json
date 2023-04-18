@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Заголовок",
+      "url": "./img/beach.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Заголовок",
+      "url": "./img/bridge.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Заголовок",
+      "url": "./img/bed.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Заголовок",
+      "url": "./img/fall.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Заголовок",
+      "url": "./img/forest.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Заголовок",
+      "url": "./img/forest-2.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Заголовок",
+      "url": "./img/forestplusroad.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Заголовок",
+      "url": "./img/forestplussun.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Заголовок",
+      "url": "./img/homesweethome.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Заголовок",
+      "url": "./img/island.jpg"
+    }
+  ]
+}

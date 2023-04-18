@@ -1,0 +1,43 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    /*font-family: sans-serif;*/
+    /*background-color: #1e1e1e;*/ /* Dark background - white text */
+    /*color: #f1eded;*/ /* Dark background - white text */
+    /* background-color: #fff; */ /* White background - black text */
+    /* color: #1e1e1e; */ /* Dark text - white background */
+}
+
+img {
+    background-color: rgba(169, 169, 169, 0.56);
+    background-size: cover;
+    font-size: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-block: 20px;
+}
+
+/*.container {*/
+/*    margin: 0 auto;*/
+/*    max-width: 1300px;*/
+/*}*/
+
+/*.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}*/
+
+/*@media screen and (max-width: 1300px) {*/
+/*    .container {*/
+/*        padding: 0 20px;*/
+/*    }*/
+/*}*/
+
+.card {
+    margin-block: 30px;
+    padding: 30px;
+    box-shadow: 0px 5px 39px 10px rgba(34, 60, 80, 0.06);
+    border-radius: 1rem;
+}
